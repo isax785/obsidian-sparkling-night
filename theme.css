@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+:root {
+    --dark-grey: #2E2F30;
+    --grey: #3C3D3E;
+    --white: #FCFCFC;
+    --vista-blue: #789EF9;
+    --cerise: #DA4167;
+    --lime-green: #CEFF1A;
+}
+
+.theme-dark {
+    --background-primary: var(--dark-grey);
+    --background-secondary: var(--grey);
+    --background-code: var(--grey);
+
+    --text-normal: var(--white);
+    --text-accent: var(--cerise);
+    
+    --text-header: var(--vista-blue);
+    
+    --h1-color: var(--vista-blue);
+    --h2-color: var(--vista-blue);
+    --h3-color: var(--vista-blue);
+    --h4-color: var(--vista-blue);
+    --h5-color: var(--vista-blue);
+    --h6-color: var(--vista-blue);
+    
+}
+
+code,
+.cm-inline-code {
+    background-color: var(--grey)!important;
+    color: var(--cerise)!important;
+    font-weight: bold;
+    padding: 2px 2px;
+}
