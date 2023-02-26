@@ -1,37 +1,83 @@
 @charset "UTF-8";
 
 :root {
-    --dark-grey: #2E2F30;
-    --grey: #3C3D3E;
+    /* --dark-grey: #2E2F30; */
+    /* --grey: #3C3D3E; */
     --white: #FCFCFC;
-    --vista-blue: #789EF9;
-    --cerise: #DA4167;
-    --lime-green: #CEFF1A;
+    --raisin-black: #1B1825;
+    --rich-black: #121019;
+    --dark-purple: #242032;
+    --bright-green: #5AFF15;
+    --tropical-indigo: #8B80F9;
+    --orange: #F26419;
+    --ultra-violet: #53599A;
+    --verdigris: #17BEBB;
 }
 
 .theme-dark {
-    --background-primary: var(--dark-grey);
-    --background-secondary: var(--grey);
+    --background-primary: var(--rich-black);
+    --background-secondary: var(--raisin-black);
     --background-code: var(--grey);
 
     --text-normal: var(--white);
-    --text-accent: var(--cerise);
+    /* --text-accent: var(--orange); */
+    --text-accent: var(--atomic-tangerine);
     
-    --text-header: var(--vista-blue);
+    --text-header: var(--tropical-indigo);
     
-    --h1-color: var(--vista-blue);
-    --h2-color: var(--vista-blue);
-    --h3-color: var(--vista-blue);
-    --h4-color: var(--vista-blue);
-    --h5-color: var(--vista-blue);
-    --h6-color: var(--vista-blue);
-    
+    --h1-color: var(--tropical-indigo);
+    --h2-color: var(--tropical-indigo);
+    --h3-color: var(--tropical-indigo);
+    --h4-color: var(--tropical-indigo);
+    --h5-color: var(--tropical-indigo);
+    --h6-color: var(--tropical-indigo);
 }
 
-code,
-.cm-inline-code {
-    background-color: var(--grey)!important;
-    color: var(--cerise)!important;
+/*Code - Code Block*/
+
+pre code { 
+    background-color: var(--dark-purple) !important;
+    border: var(--dark-purple) !important;
+}
+
+pre[class*="language-"] {
+    background: var(--dark-purple);
+}
+
+.cm-s-obsidian div.HyperMD-codeblock-begin-bg, 
+.cm-s-obsidian div.HyperMD-codeblock-end-bg {
+    background-color: var(--dark-purple);
+}
+.cm-s-obsidian div.HyperMD-codeblock-bg {
+    left: 0;
+    right: 0;
+    background-color: var(--dark-purple);
+}
+.cm-inline-code, .markdown-rendered code {
+    background-color: var(--dark-purple)!important;
+    color: var(--bright-green)!important;
     font-weight: bold;
-    padding: 2px 2px;
+    padding: 5px 6px;
+    border-radius: 6px;
+}
+
+/*titles*/
+
+.cm-header.cm-header-1, h1 {
+    text-decoration: underline;
+    text-align: center;
+    width: 100%;
+}
+
+
+/*external link*/
+
+.external-link, .cm-underline {
+    /* color: var(--bright-green); */
+    color: var(--verdigris);
+    text-underline-offset: 3px;
+}
+
+link {
+    color: var(--bright-green);
 }

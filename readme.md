@@ -5,7 +5,9 @@
 # TODO
 
 - [ ] quote (>) ??
-- [ ] H1 title: add line below (whole page span)
+- [ ] H1 title: 
+  - [ ] add line below (whole page span)
+  - [ ] centered text
 - [ ] H2 title: add underline, text color
 - [ ] `TBE` image centered
 - [ ] bullet list points symbol
