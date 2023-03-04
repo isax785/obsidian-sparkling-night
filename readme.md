@@ -5,18 +5,21 @@
 # TODO
 
 - [ ] quote (>) ??
+- [ ] underline: gradient on line
 - [ ] H1 title: 
   - [ ] add line below (whole page span)
   - [ ] centered text
 - [ ] H2 title: add underline, text color
 - [ ] `TBE` image centered
-- [ ] bullet list points symbol
+  - [ ] bullet list points symbol
 - [ ] file linking
 - [ ] ordered list numbers: 
   - [ ] first level I. II. III. IV. and so on
   - [ ] second level i. ii. iii. iV. and so on
 
-- [ ] animations
+- [ ] codeblock: render in preview mode
+
+- [ ] animations TBE
 - [ ] secondary panes colors
 
 ## Dark Theme
