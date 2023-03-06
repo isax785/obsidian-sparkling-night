@@ -4,8 +4,10 @@
 
 # TODO
 
-- [ ] quote (>) ??
-- [ ] underline: gradient on line
+- [ ] quote (>)
+  - [ ] background
+  - [ ] bold
+  - [ ] italic
 - [ ] H1 title: 
   - [ ] add line below (whole page span)
   - [ ] centered text
@@ -16,6 +18,7 @@
 - [ ] ordered list numbers: 
   - [ ] first level I. II. III. IV. and so on
   - [ ] second level i. ii. iii. iV. and so on
+  - [ ] fonts
 
 - [ ] codeblock: render in preview mode
 
