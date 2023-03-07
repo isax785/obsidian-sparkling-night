@@ -30,6 +30,9 @@
     --h6-color: var(--tropical-indigo);
 }
 
+/* General Styles */
+
+
 /* ----------- Titles ----------- */
 
 .cm-header.cm-header-1, h1 {
@@ -42,7 +45,17 @@
     padding: 8px;
 }
 
-/* Ordered Lists */
+h2 {
+    
+}
+
+/* ----------- Spellcheck Error ----------- */
+
+.CodeMirror .cm-spell-error { /*not working*/
+    background-image: #5AFF15;
+}
+
+/* ----------- Ordered Lists ----------- */
 
 .cm-formatting-list-ol {
     list-style:inside;
@@ -52,6 +65,10 @@
 ol {
     list-style-type: space-counter;
 }
+
+/* ----------- Unordered Lists ----------- */
+
+
 
 /* ----------- Bold, Italic, Underline ----------- */
 

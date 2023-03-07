@@ -4,26 +4,39 @@
 
 # TODO
 
+- [ ] H1 title: 
+  - [ ] add line below (whole page span)
+  - [ ] `#f` centered text in preview mode
+
+- [ ] H2 title: not centered, add underline (with upper shade, see ), text color
+
+- [ ] `#i` image centered
+
+- [ ] file linking
+
 - [ ] quote (>)
   - [ ] background
   - [ ] bold
   - [ ] italic
-- [ ] H1 title: 
-  - [ ] add line below (whole page span)
-  - [ ] centered text
-- [ ] H2 title: add underline, text color
-- [ ] `TBE` image centered
-  - [ ] bullet list points symbol
-- [ ] file linking
+
+- [ ] unordered list
+  - [ ] first level symbol
+  - [ ] second level symbol
+  - [ ] third level symbol
+
 - [ ] ordered list numbers: 
   - [ ] first level I. II. III. IV. and so on
   - [ ] second level i. ii. iii. iV. and so on
-  - [ ] fonts
+- [ ] text font
 
-- [ ] codeblock: render in preview mode
+- [ ] codeblock
+  - [x] render in preview mode
+  - [ ] change theme for code colouring
 
 - [ ] animations TBE
 - [ ] secondary panes colors
+
+- [ ] spellcheck underline color
 
 ## Dark Theme
 
