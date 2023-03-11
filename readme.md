@@ -4,11 +4,14 @@
 
 # TODO
 
-- [ ] H1 title: 
-  - [ ] add line below (whole page span)
-  - [ ] `#f` centered text in preview mode
+- [ ] `#c` how to edit source|preview|read mode
 
-- [ ] H2 title: not centered, add underline (with upper shade, see ), text color
+- [ ] external link: check preview/reading modes
+- [x] H1 title: 
+  - [x] add line below (whole page span)
+  - [x] `#f` centered text in preview mode
+
+- [x] H2 title: not centered, add underline (with upper shade, see ), text color
 
 - [ ] `#i` image centered
 

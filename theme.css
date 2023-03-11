@@ -35,19 +35,28 @@
 
 /* ----------- Titles ----------- */
 
-.cm-header.cm-header-1, h1 {
+/* .cm-header.cm-header-1, */
+.HyperMD-header-1, h1 {
     text-align: center;
     width: 100%;
     border-bottom: 3px solid transparent;
     border-image: linear-gradient(0.25turn, var(--dark-purple), var(--tropical-indigo), var(--dark-purple));
     border-radius: 3px;
     border-image-slice: 1;
-    padding: 8px;
+    padding: 3px;
 }
 
-h2 {
-    
+/* .cm-header.cm-header-2,  */
+.HyperMD-header-2, h2 {
+    text-align: left;
+    width: 100%;
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(0.25turn, var(--tropical-indigo), var(--dark-purple));
+    border-radius: 3px;
+    border-image-slice: 1;
+    /* padding: 2px; */
 }
+
 
 /* ----------- Spellcheck Error ----------- */
 
@@ -73,11 +82,11 @@ ol {
 /* ----------- Bold, Italic, Underline ----------- */
 
 .cm-strong, strong {
-    color: var(--tropical-indigo) !important;
+    color: var(--robin-egg-blue) !important;
 }
 
 .cm-em, em {
-    color: var(--robin-egg-blue);
+    color: var(--tropical-indigo);
 }
 
 /* ----------- Code - Code Block ----------- */
@@ -118,6 +127,8 @@ pre[class*="language-"] {
     font-style: italic;
     font-size: 0.9em;
     background-color: var(--dark-purple);
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 
@@ -132,3 +143,22 @@ pre[class*="language-"] {
 link {
     color: var(--bright-green);
 }
+
+.cm-s-obsidian span.cm-link:not(.cm-formatting-link) .cm-underline,
+.cm-s-obsidian span.cm-hmd-internal-link .cm-underline {
+  text-shadow: -1px -1px 2px var(--raisin-black), -1px 1px 2px var(--raisin-black),
+    1px -1px 2px var(--raisin-black), 1px 1px 2px var(--raisin-black);
+  color: var(--text-normal);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 5px 5px;
+  text-decoration: none;
+}
+
+.cm-s-obsidian span.cm-link:not(.cm-formatting-link) .cm-underline {
+    background-image: linear-gradient(
+      to bottom,
+      var(--robin-egg-blue) 0%,
+      var(--robin-egg-blue) 100%
+    );
+  }
