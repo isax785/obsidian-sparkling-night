@@ -4,18 +4,18 @@
 
 # TODO
 
-- [ ] `#c` how to edit source|preview|read mode
+
+- [ ] selection color
 
 - [ ] external link: check preview/reading modes
 - [x] H1 title: 
   - [x] add line below (whole page span)
-  - [x] `#f` centered text in preview mode
 
 - [x] H2 title: not centered, add underline (with upper shade, see ), text color
 
 - [ ] `#i` image centered
 
-- [ ] file linking
+- [x] file linking
 
 - [ ] quote (>)
   - [ ] background
@@ -30,6 +30,7 @@
 - [ ] ordered list numbers: 
   - [ ] first level I. II. III. IV. and so on
   - [ ] second level i. ii. iii. iV. and so on
+
 - [ ] text font
 
 - [ ] codeblock
@@ -37,9 +38,25 @@
   - [ ] change theme for code colouring
 
 - [ ] animations TBE
+
 - [ ] secondary panes colors
 
 - [ ] spellcheck underline color
+
+**Fixes**
+
+- [x] H1 title centered text in preview mode
+- [ ] internal link underline color
+- [ ] tags: in preview mode, do not split `#` from the text
+
+**CSS Knowledge**
+
+- [ ] classes
+- [ ] `before` 
+- [ ] `after`
+- [ ] `em` `rem`
+- [ ] `#c` how to edit source|preview|read mode
+  - [ ] `.cm-hmd` ??
 
 ## Dark Theme
 
