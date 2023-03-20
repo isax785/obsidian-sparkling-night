@@ -5,15 +5,13 @@
 # TODO
 
 
-- [ ] selection color
-
-- [ ] external link: check preview/reading modes
+- [x] selection color
+- [x] external link: check preview/reading modes
 - [x] H1 title: 
   - [x] add line below (whole page span)
-
 - [x] H2 title: not centered, add underline (with upper shade, see ), text color
 
-- [ ] `#i` image centered
+- [ ] image centered in the page
 
 - [x] file linking
 
@@ -45,9 +43,22 @@
 
 **Fixes**
 
-- [x] H1 title centered text in preview mode
-- [ ] internal link underline color
 - [ ] tags: in preview mode, do not split `#` from the text
+- [ ] italic into quotes does not render when in preview mode
+- [ ] quotes paragpraph space to reduce when in preview mode
+- [ ] inline code color when in reading mode
+
+
+- [x] internal link underline color
+- [x] code render
+  - [x] preview mode
+  - [x] reading mode
+- [x] tags color must be different from code color
+- [x] H1 title centered text in preview mode
+- [x] internal links
+  - [x] not colored in preview mode
+  - [x] bad render in read mode
+- [x] external links: do not render in read mode
 
 **CSS Knowledge**
 

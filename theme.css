@@ -19,6 +19,7 @@
 
     --text-normal: var(--white);
     --text-accent: var(--atomic-tangerine);
+    --text-selection: var(--tropical-indigo);
     
     --text-header: var(--tropical-indigo);
     
@@ -49,7 +50,7 @@
 /* .cm-header.cm-header-2,  */
 .HyperMD-header-2, h2 {
     text-align: left;
-    width: 100%;
+    width: 60%;
     border-bottom: 2px solid transparent;
     border-image: linear-gradient(0.25turn, var(--tropical-indigo), var(--dark-purple));
     border-radius: 3px;
@@ -66,12 +67,17 @@
 
 /* ----------- Ordered Lists ----------- */
 
-.cm-formatting-list-ol {
-    list-style:inside;
-    list-style-type: space-counter;
+/* .cm-formatting-list-ol, 
+ol  */
+
+ol,
+ol ol,
+ol ol ol
+{
+    list-style-type: lower-roman;
 }
 
-ol {
+/* ol {
     display: block;
     list-style-type:georgian;
     margin-block-start: 1em;
@@ -79,16 +85,15 @@ ol {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;
-  }
+  } */
 
 /* ----------- Unordered Lists ----------- */
 
-.markdown-rendered ul.has-list-bullet {
-    list-style-type: '\300B';
-    /* list-style-type: '\200B'; */
+ul,
+ul ul,
+ul ul ul {
+    list-style-type: square;
 }
-
-
 /* ----------- Bold, Italic, Underline ----------- */
 
 .cm-strong, strong {
@@ -121,14 +126,54 @@ pre[class*="language-"] {
     background-color: var(--dark-purple);
 }
 
-.cm-inline-code, .markdown-rendered code {
+.cm-inline-code{
     background-color: var(--dark-purple)!important;
     color: var(--bright-green)!important;
+    color: var(--white);
     /* font-weight: bold; */
     font-size: 0.9rem;
     padding: 3px 4px;
     border-radius: 5px;
 }
+
+.markdown-rendered code {
+    background-color: var(--dark-purple)!important;
+    /* color: var(--bright-green)!important; */
+    color: var(--white);
+    /* font-weight: bold; */
+    font-size: 0.9rem;
+    padding: 3px 4px;
+    border-radius: 5px;
+}
+
+/* varaible */
+.cm-link, .cm-variable, .cm-variable-2, .cm-variable-3 {
+    color: var(--white);
+}
+
+/* function name in declaration */
+/* .markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock,  */
+.cm-def.cm-hmd-codeblock,
+.token.function{
+    color: var(--bright-green);
+    text-emphasis: italic;
+}
+
+/* built-in functions, methods */
+.cm-builtin, .cm-property, .cm-attribute, .cm-type, .cm-keyword, 
+.token.keyword, .token.builtin, .token.property
+{
+    color: var(--tropical-indigo);
+}
+
+.cm-hmd-codeblock.cm-string,
+.token.string 
+{
+    color: var(--robin-egg-blue);
+}
+
+/* string */
+
 
 /* ----------- Tags ----------- */
 
@@ -137,7 +182,7 @@ pre[class*="language-"] {
     color: var(--robin-egg-blue)!important;
     font-weight: bold;
     padding: 5px 5px;
-    border-radius: 12px;
+    border-radius: 6px;
 }
 
 
@@ -161,8 +206,7 @@ u {
 
 /* ----------- External Links ----------- */
 
-
-.external-link,
+.external-link, .internal-link,
  .cm-s-obsidian span.cm-link:not(.cm-formatting-link) .cm-underline,
 .cm-s-obsidian span.cm-hmd-internal-link .cm-underline {
   text-shadow: -1px -1px 2px var(--raisin-black), -1px 1px 2px var(--raisin-black),
@@ -175,9 +219,10 @@ u {
   padding-right: 0;
 }
 
-/* .external-link, .cm-s-obsidian span.cm-link:not(.cm-formatting-link) .cm-underline { */
+.external-link,
 .cm-s-obsidian span.cm-link:not(.cm-formatting-link) .cm-underline,
-.cm-s-obsidian span.cm-hmd-external-link .cm-underline{
+.cm-s-obsidian span.cm-hmd-external-link .cm-underline
+{
     background-image: linear-gradient(
       to bottom,
       var(--tropical-indigo) 0%,
@@ -185,10 +230,20 @@ u {
     );
   }
 
-  .internal-link {
+.internal-link,
+.cm-underline
+  {
     background-image: linear-gradient(
       to bottom,
       var(--robin-egg-blue) 0%,
       var(--robin-egg-blue) 100%
       );
+    text-decoration: none!important;
   }
+
+  /* link hover color */
+a:hover,
+.internal-link:hover {
+  text-decoration: none !important;
+  color: var(--tropical-indigo);
+}
