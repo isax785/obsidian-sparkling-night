@@ -167,9 +167,10 @@ pre[class*="language-"] {
     color: var(--tropical-indigo);
 }
 
-/* strings */
+/* strings and numbers */
 .cm-hmd-codeblock.cm-string,
-.token.string 
+.cm-hmd-codeblock.cm-number,
+.token.string, .token.number 
 {
     color: var(--robin-egg-blue);
 }
@@ -180,6 +181,9 @@ pre[class*="language-"] {
 {
     color: var(--bright-greend);
 }
+
+/* number */
+
 
 
 /* ----------- Tags ----------- */
