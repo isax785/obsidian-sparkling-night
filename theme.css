@@ -29,6 +29,8 @@
     --h4-color: var(--tropical-indigo);
     --h5-color: var(--tropical-indigo);
     --h6-color: var(--tropical-indigo);
+
+    --background-secondary-alt: var(--raisin-black);
 }
 
 /* General Styles */
