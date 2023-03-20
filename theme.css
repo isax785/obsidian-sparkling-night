@@ -182,8 +182,11 @@ pre[class*="language-"] {
     color: var(--bright-greend);
 }
 
-/* number */
-
+/* codeblock */
+.cm-hmd-codeblock 
+{
+    color: white;
+}
 
 
 /* ----------- Tags ----------- */
