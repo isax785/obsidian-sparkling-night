@@ -31,6 +31,21 @@
     --h6-color: var(--tropical-indigo);
 
     --background-secondary-alt: var(--raisin-black);
+
+    /* Checkboxes */
+    --checkbox-marker-color: var(--white);
+    --radius-s: 2px;
+    --interactive-accent: var(--tropical-indigo); /*marked color*/
+    --checklist-done-color: var(--ultra-violet);
+    /* --checkbox-border-color: var(--white); */
+    --checkbox-border-color-hover: var(--bright-green);
+
+    --list-marker-color: var(--white);
+    --list-marker-color-hover: var(--bright-green);
+}
+
+.theme-light {
+    --background-primary: var(--white);
 }
 
 /* General Styles */
@@ -41,7 +56,7 @@
 /* .cm-header.cm-header-1, */
 .HyperMD-header-1, h1 {
     text-align: center;
-    width: 100%;
+    width: 80%;
     border-bottom: 3px solid transparent;
     border-image: linear-gradient(0.25turn, var(--dark-purple), var(--tropical-indigo), var(--dark-purple));
     border-radius: 3px;
@@ -69,25 +84,12 @@
 
 /* ----------- Ordered Lists ----------- */
 
-/* .cm-formatting-list-ol, 
-ol  */
-
 ol,
 ol ol,
 ol ol ol
 {
     list-style-type: lower-roman;
 }
-
-/* ol {
-    display: block;
-    list-style-type:georgian;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-  } */
 
 /* ----------- Unordered Lists ----------- */
 
@@ -270,7 +272,7 @@ a:hover,
 
 .nav-folder-children .nav-file-title-content:first-child::before 
 { 
-    content: '🗄 '; 
+    content: '📄 '; 
     /* filter: invert(57%) sepia(90%) saturate(200%) hue-rotate(215deg) brightness(120%) contrast(96%); */
 }
 
