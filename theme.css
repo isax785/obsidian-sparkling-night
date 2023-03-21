@@ -10,6 +10,8 @@
     --orange: #F26419;
     --ultra-violet: #53599A;
     --robin-egg-blue: #19D8D5;
+    --cool-gray: #7C809B;
+    --air-force-blue: #7293A0;
 }
 
 .theme-dark {
@@ -36,8 +38,8 @@
     --checkbox-marker-color: var(--white);
     --radius-s: 2px;
     --interactive-accent: var(--tropical-indigo); /*marked color*/
-    --checklist-done-color: var(--ultra-violet);
-    /* --checkbox-border-color: var(--white); */
+    --checklist-done-color: var(--cool-gray);
+    --checkbox-border-color: var(--cool-gray);
     --checkbox-border-color-hover: var(--bright-green);
 
     --list-marker-color: var(--white);
@@ -56,7 +58,7 @@
 /* .cm-header.cm-header-1, */
 .HyperMD-header-1, h1 {
     text-align: center;
-    width: 80%;
+    width: 100%;
     border-bottom: 3px solid transparent;
     border-image: linear-gradient(0.25turn, var(--dark-purple), var(--tropical-indigo), var(--dark-purple));
     border-radius: 3px;
