@@ -17,8 +17,10 @@
 .theme-dark {
     --background-primary: var(--rich-black);
     --background-secondary: var(--raisin-black);
+    --background-secondary-alt: var(--raisin-black);
     --background-code: var(--grey);
 
+    /* Text */
     --text-normal: var(--white);
     --text-accent: var(--atomic-tangerine);
     --text-selection: var(--tropical-indigo);
@@ -26,13 +28,35 @@
     --text-header: var(--tropical-indigo);
     
     --h1-color: var(--tropical-indigo);
+    --h1-gradient-start: var(--dark-purple);
+    --h1-gradient-mid: var(--tropical-indigo);
+    --h1-gradient-end: var(--dark-purple);
+    
     --h2-color: var(--tropical-indigo);
+    --h2-gradient-start: var(--tropical-indigo);
+    --h2-gradient-end: var(--dark-purple);
+
     --h3-color: var(--tropical-indigo);
     --h4-color: var(--tropical-indigo);
     --h5-color: var(--tropical-indigo);
     --h6-color: var(--tropical-indigo);
 
-    --background-secondary-alt: var(--raisin-black);
+    --strong: var(--robin-egg-blue);
+    --italic: var(--robin-egg-blue);
+
+    /* Code */
+    --codeblock-background: var(--dark-purple);
+    --codeblock-color: var(--white);
+    --inline-code-background: var(--dark-purple);
+    --inline-code-color: var(--bright-green);
+    --code-variable-color: var(--white);
+    --code-function-color: var(--bright-green);
+    --code-builtin-color: var(--tropical-indigo);
+    --code-string-color: var(--robin-egg-blue);
+    --code-operator-color: var(--bright-green);
+    --code-comment-color: var(--cool-gray);
+
+
 
     /* Checkboxes */
     --checkbox-marker-color: var(--white);
@@ -41,7 +65,7 @@
     --checklist-done-color: var(--cool-gray);
     --checkbox-border-color: var(--cool-gray);
     --checkbox-border-color-hover: var(--bright-green);
-
+    /* List Markers  */
     --list-marker-color: var(--white);
     --list-marker-color-hover: var(--bright-green);
 }
@@ -60,7 +84,10 @@
     text-align: center;
     width: 100%;
     border-bottom: 3px solid transparent;
-    border-image: linear-gradient(0.25turn, var(--dark-purple), var(--tropical-indigo), var(--dark-purple));
+    border-image: linear-gradient(0.25turn, 
+                                  var(--h1-gradient-start), 
+                                  var(--h1-gradient-mid),
+                                  var(--h1-gradient-end));
     border-radius: 3px;
     border-image-slice: 1;
     padding: 3px;
@@ -71,15 +98,16 @@
     text-align: left;
     width: 60%;
     border-bottom: 2px solid transparent;
-    border-image: linear-gradient(0.25turn, var(--tropical-indigo), var(--dark-purple));
+    border-image: linear-gradient(0.25turn, 
+                                  var(--h2-gradient-start),
+                                  var(--h2-gradient-end));
     border-radius: 3px;
     border-image-slice: 1;
     /* padding: 2px; */
 }
 
-
 /* ----------- Spellcheck Error ----------- */
-
+/* does not work */
 .CodeMirror .cm-spell-error { /*not working*/
     background-image: #5AFF15;
 }
@@ -103,66 +131,66 @@ ul ul ul {
 /* ----------- Bold, Italic, Underline ----------- */
 
 .cm-strong, strong {
-    color: var(--robin-egg-blue) !important;
+    color: var(--strong) !important;
 }
 
 .cm-em, em,
 .cm-em cm-quote cm-quote-1 {
-    color: var(--robin-egg-blue);
+    color: var(--italic);
 }
 
 /* ----------- Code - Code Block ----------- */
 
 pre code { 
-    background-color: var(--dark-purple) !important;
-    border: var(--dark-purple) !important;
+    background-color: var(--codeblock-background) !important;
+    border: var(--codeblock-background) !important;
 }
 
-pre[class*="language-"] {
-    background: var(--dark-purple);
+pre[class*="language-"], 
+code[class*="language-"]
+{
+    background: var(--codeblock-background);
+    color: var(--codeblock-color)!important;
 }
 
 .cm-s-obsidian div.HyperMD-codeblock-begin-bg, 
 .cm-s-obsidian div.HyperMD-codeblock-end-bg {
-    background-color: var(--dark-purple);
+    background-color: var(--codeblock-background);
 }
 
 .cm-s-obsidian div.HyperMD-codeblock-bg {
     left: 0;
     right: 0;
-    background-color: var(--dark-purple);
+    background-color: var(--codeblock-background);
 }
 
 .cm-inline-code{
-    background-color: var(--dark-purple)!important;
-    color: var(--bright-green)!important;
-    color: var(--white);
-    /* font-weight: bold; */
+    background-color: var(--inline-code-background)!important;
+    color: var(--inline-code-color)!important;
     font-size: 0.9rem!important;
     padding: 3px 4px;
     border-radius: 5px;
 }
 
 .markdown-rendered code {
-    background-color: var(--dark-purple)!important;
-    /* color: var(--bright-green)!important; */
-    color: var(--white);
-    /* font-weight: bold; */
+    background-color: var(--codeblock-background)!important;
+    /* color: var(--white); */
+    color: var(--inline-code-color);
     font-size: 0.9rem;
     padding: 3px 4px;
     border-radius: 5px;
 }
 
-/* varaible */
+/* variable */
 .cm-link, .cm-variable, .cm-variable-2, .cm-variable-3 {
-    color: var(--white);
+    color: var(--code-variable-color)!important;
 }
 
 /* function name in declaration */
 /* .markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock,  */
 .cm-def.cm-hmd-codeblock,
 .token.function{
-    color: var(--bright-green);
+    color: var(--code-function-color)!important;
     text-emphasis: italic;
 }
 
@@ -170,7 +198,7 @@ pre[class*="language-"] {
 .cm-builtin, .cm-property, .cm-attribute, .cm-type, .cm-keyword, 
 .token.keyword, .token.builtin, .token.property
 {
-    color: var(--tropical-indigo);
+    color: var(--code-builtin-color)!important;
 }
 
 /* strings and numbers */
@@ -178,20 +206,27 @@ pre[class*="language-"] {
 .cm-hmd-codeblock.cm-number,
 .token.string, .token.number 
 {
-    color: var(--robin-egg-blue);
+    color: var(--code-string-color)!important;
 }
 
 /* operators */
 .cm-operator, 
 .token.operator 
 {
-    color: var(--bright-greend);
+    color: var(--code-operator-color)!important;
 }
 
 /* codeblock */
 .cm-hmd-codeblock 
 {
-    color: white;
+    color: var(--codeblock-color);
+}
+
+/* comment */
+.cm-comment,
+.token.comment
+{
+    color: var(--code-comment-color)!important;
 }
 
 
