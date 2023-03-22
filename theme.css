@@ -12,6 +12,14 @@
     --robin-egg-blue: #19D8D5;
     --cool-gray: #7C809B;
     --air-force-blue: #7293A0;
+    --platinum: #DDDDDD;
+    --white-smoke: #F5F5F5;
+    --persian-green: #1B998B;
+    --lemon-lime: #E4FF1A;
+    --green-blue: #306BAC;
+    --cornflower-blue: #6F9CEB;
+    /* --kelly-green: #62AB37; */
+    --pumpkin: #EA7317;
 }
 
 .theme-dark {
@@ -62,6 +70,10 @@
     --code-operator-color: var(--bright-green);
     --code-comment-color: var(--cool-gray);
 
+    /* Tags */
+    --tags-background: var(--dark-purple);
+    --tags-color: var(--robin-egg-blue);
+
     /* List Markers  */
     --list-marker-color: var(--white);
     --list-marker-color-hover: var(--bright-green);
@@ -94,74 +106,81 @@
 .theme-light {
     /* Background */
     --background-primary: var(--white);
-    --background-secondary: var(--cool-gray);
-    --background-secondary-alt: var(--raisin-black);
-    --background-code: var(--grey);
+    --background-secondary: var(--white-smoke);
+    --background-secondary-alt: var(--platinum);
+    --background-code: var(--platinum);
 
     /* Text */
     --text-normal: var(--rich-black);
     --text-accent: var(--atomic-tangerine);
-    --text-selection: var(--tropical-indigo);
+    --text-selection: var(--platinum);
     
-    --text-header: var(--tropical-indigo);
+    --text-header: var(--cornflower-blue);
     
-    --h1-color: var(--tropical-indigo);
-    --h1-gradient-start: var(--dark-purple);
-    --h1-gradient-mid: var(--tropical-indigo);
-    --h1-gradient-end: var(--dark-purple);
+    --h1-color: var(--cornflower-blue);
+    --h1-gradient-start: var(--green-blue);
+    --h1-gradient-mid: var(--cornflower-blue);
+    --h1-gradient-end: var(--green-blue);
     
-    --h2-color: var(--tropical-indigo);
-    --h2-gradient-start: var(--tropical-indigo);
-    --h2-gradient-end: var(--dark-purple);
+    --h2-color: var(--cornflower-blue);
+    --h2-gradient-start: var(--cornflower-blue);
+    --h2-gradient-end: var(--green-blue);
 
-    --h3-color: var(--tropical-indigo);
-    --h4-color: var(--tropical-indigo);
-    --h5-color: var(--tropical-indigo);
-    --h6-color: var(--tropical-indigo);
+    --h3-color: var(--cornflower-blue);
+    --h4-color: var(--cornflower-blue);
+    --h5-color: var(--cornflower-blue);
+    --h6-color: var(--cornflower-blue);
 
     /* bold, Italic, Underline */
-
-    --strong: var(--robin-egg-blue);
-    --italic: var(--robin-egg-blue);
-    --underline-text-color: var(--white);
-    --underline-line-color: var(--bright-green);
+    --strong: var(--pumpkin);
+    --italic: var(--pumpkin);
+    --underline-text-color: var(--rich-black);
+    --underline-line-color: var(--tropical-indigo);
     --underline-line-thickness: 3px;
 
     /* Code */
-    --codeblock-background: var(--dark-purple);
-    --codeblock-color: var(--white);
-    --inline-code-background: var(--dark-purple);
-    --inline-code-color: var(--bright-green);
-    --code-variable-color: var(--white);
-    --code-function-color: var(--bright-green);
-    --code-builtin-color: var(--tropical-indigo);
-    --code-string-color: var(--robin-egg-blue);
-    --code-operator-color: var(--bright-green);
+    --codeblock-background: var(--platinum);
+    --codeblock-color: var(--rich-black);
+    --inline-code-background: var(--platinum);
+    --inline-code-color: var(--tropical-indigo);
+    --code-variable-color: var(--rich-black);
+    --code-function-color: var(--tropical-indigo);
+    --code-builtin-color: var(--cornflower-blue);
+    --code-string-color: var(--pumpkin);
+    --code-operator-color: var(--tropical-indigo);
     --code-comment-color: var(--cool-gray);
 
+    /* Tags */
+    --tags-background: var(--platinum);
+    --tags-color: var(--pumpkin);
+
     /* List Markers  */
-    --list-marker-color: var(--white);
-    --list-marker-color-hover: var(--bright-green);
+    --list-marker-color: var(--rich-black);
+    --list-marker-color-hover: var(--tropical-indigo);
 
     /* Checkboxes */
-    --checkbox-marker-color: var(--white);
+    --checkbox-marker-color: var(--rich-black);
     --radius-s: 2px;
-    --interactive-accent: var(--tropical-indigo); /*marked color*/
+    --interactive-accent: var(--cornflower-blue); /*marked color*/
     --checklist-done-color: var(--cool-gray);
     --checkbox-border-color: var(--cool-gray);
-    --checkbox-border-color-hover: var(--bright-green);
+    --checkbox-border-color-hover: var(--tropical-indigo);
 
     /* Quotes */
-    --quote-background: var(--dark-purple);
+    --quote-background: var(--platinum);
     --quote-style: italic;
 
     /* Links */
-    --link-text-shadow: var(--raisin-black);
-    --link-text-color: var(--white);
-    --link-text-color-hover: var(--tropical-indigo);
-    --link-ext-color: var(--tropical-indigo);
-    --link-int-color: var(--robin-egg-blue);
-    --link-url-text-color: var(--bright-green);
+    --link-text-shadow: var(--white);
+    --link-text-color: var(--rich-black);
+    --link-text-color-hover: var(--cornflower-blue);
+    --link-ext-color: var(--cornflower-blue);
+    --link-int-color: var(--pumpkin);
+    --link-url-text-color: var(--tropical-indigo);
+
+    /* Explorer */
+    --folder-title-color: var(--rich-black);
+    --file-title-color: var(--rich-black);
 }
 
 /* ----------- Titles ----------- */
@@ -286,8 +305,8 @@ code[class*="language-"]
 
 .cm-s-obsidian span.cm-hashtag, .tag
 {
-    background-color: var(--dark-purple)!important;
-    color: var(--robin-egg-blue)!important;
+    background-color: var(--tags-background)!important;
+    color: var(--tags-color)!important;
     font-weight: bold;
     padding: 5px 5px;
     border-radius: 6px;
