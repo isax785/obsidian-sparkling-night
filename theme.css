@@ -15,6 +15,7 @@
 }
 
 .theme-dark {
+    /* Background */
     --background-primary: var(--rich-black);
     --background-secondary: var(--raisin-black);
     --background-secondary-alt: var(--raisin-black);
@@ -41,8 +42,13 @@
     --h5-color: var(--tropical-indigo);
     --h6-color: var(--tropical-indigo);
 
+    /* bold, Italic, Underline */
+
     --strong: var(--robin-egg-blue);
     --italic: var(--robin-egg-blue);
+    --underline-text-color: var(--white);
+    --underline-line-color: var(--bright-green);
+    --underline-line-thickness: 3px;
 
     /* Code */
     --codeblock-background: var(--dark-purple);
@@ -56,7 +62,9 @@
     --code-operator-color: var(--bright-green);
     --code-comment-color: var(--cool-gray);
 
-
+    /* List Markers  */
+    --list-marker-color: var(--white);
+    --list-marker-color-hover: var(--bright-green);
 
     /* Checkboxes */
     --checkbox-marker-color: var(--white);
@@ -65,17 +73,96 @@
     --checklist-done-color: var(--cool-gray);
     --checkbox-border-color: var(--cool-gray);
     --checkbox-border-color-hover: var(--bright-green);
-    /* List Markers  */
-    --list-marker-color: var(--white);
-    --list-marker-color-hover: var(--bright-green);
+
+    /* Quotes */
+    --quote-background: var(--dark-purple);
+    --quote-style: italic;
+
+    /* Links */
+    --link-text-shadow: var(--raisin-black);
+    --link-text-color: var(--white);
+    --link-text-color-hover: var(--tropical-indigo);
+    --link-ext-color: var(--tropical-indigo);
+    --link-int-color: var(--robin-egg-blue);
+    --link-url-text-color: var(--bright-green);
+
+    /* Explorer */
+    --folder-title-color: var(--white);
+    --file-title-color: var(--white);
 }
 
 .theme-light {
+    /* Background */
     --background-primary: var(--white);
+    --background-secondary: var(--cool-gray);
+    --background-secondary-alt: var(--raisin-black);
+    --background-code: var(--grey);
+
+    /* Text */
+    --text-normal: var(--rich-black);
+    --text-accent: var(--atomic-tangerine);
+    --text-selection: var(--tropical-indigo);
+    
+    --text-header: var(--tropical-indigo);
+    
+    --h1-color: var(--tropical-indigo);
+    --h1-gradient-start: var(--dark-purple);
+    --h1-gradient-mid: var(--tropical-indigo);
+    --h1-gradient-end: var(--dark-purple);
+    
+    --h2-color: var(--tropical-indigo);
+    --h2-gradient-start: var(--tropical-indigo);
+    --h2-gradient-end: var(--dark-purple);
+
+    --h3-color: var(--tropical-indigo);
+    --h4-color: var(--tropical-indigo);
+    --h5-color: var(--tropical-indigo);
+    --h6-color: var(--tropical-indigo);
+
+    /* bold, Italic, Underline */
+
+    --strong: var(--robin-egg-blue);
+    --italic: var(--robin-egg-blue);
+    --underline-text-color: var(--white);
+    --underline-line-color: var(--bright-green);
+    --underline-line-thickness: 3px;
+
+    /* Code */
+    --codeblock-background: var(--dark-purple);
+    --codeblock-color: var(--white);
+    --inline-code-background: var(--dark-purple);
+    --inline-code-color: var(--bright-green);
+    --code-variable-color: var(--white);
+    --code-function-color: var(--bright-green);
+    --code-builtin-color: var(--tropical-indigo);
+    --code-string-color: var(--robin-egg-blue);
+    --code-operator-color: var(--bright-green);
+    --code-comment-color: var(--cool-gray);
+
+    /* List Markers  */
+    --list-marker-color: var(--white);
+    --list-marker-color-hover: var(--bright-green);
+
+    /* Checkboxes */
+    --checkbox-marker-color: var(--white);
+    --radius-s: 2px;
+    --interactive-accent: var(--tropical-indigo); /*marked color*/
+    --checklist-done-color: var(--cool-gray);
+    --checkbox-border-color: var(--cool-gray);
+    --checkbox-border-color-hover: var(--bright-green);
+
+    /* Quotes */
+    --quote-background: var(--dark-purple);
+    --quote-style: italic;
+
+    /* Links */
+    --link-text-shadow: var(--raisin-black);
+    --link-text-color: var(--white);
+    --link-text-color-hover: var(--tropical-indigo);
+    --link-ext-color: var(--tropical-indigo);
+    --link-int-color: var(--robin-egg-blue);
+    --link-url-text-color: var(--bright-green);
 }
-
-/* General Styles */
-
 
 /* ----------- Titles ----------- */
 
@@ -181,53 +268,18 @@ code[class*="language-"]
     border-radius: 5px;
 }
 
-/* variable */
-.cm-link, .cm-variable, .cm-variable-2, .cm-variable-3 {
-    color: var(--code-variable-color)!important;
-}
+/* code styling */
 
-/* function name in declaration */
-/* .markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock,  */
-.cm-def.cm-hmd-codeblock,
-.token.function{
+.cm-link, .cm-variable, .cm-variable-2, .cm-variable-3 {color: var(--code-variable-color)!important;} /* variable */
+.cm-def.cm-hmd-codeblock, .token.function{
     color: var(--code-function-color)!important;
     text-emphasis: italic;
-}
-
-/* built-in functions, methods */
-.cm-builtin, .cm-property, .cm-attribute, .cm-type, .cm-keyword, 
-.token.keyword, .token.builtin, .token.property
-{
-    color: var(--code-builtin-color)!important;
-}
-
-/* strings and numbers */
-.cm-hmd-codeblock.cm-string,
-.cm-hmd-codeblock.cm-number,
-.token.string, .token.number 
-{
-    color: var(--code-string-color)!important;
-}
-
-/* operators */
-.cm-operator, 
-.token.operator 
-{
-    color: var(--code-operator-color)!important;
-}
-
-/* codeblock */
-.cm-hmd-codeblock 
-{
-    color: var(--codeblock-color);
-}
-
-/* comment */
-.cm-comment,
-.token.comment
-{
-    color: var(--code-comment-color)!important;
-}
+} /* function name in declaration */
+.cm-builtin, .cm-property, .cm-attribute, .cm-type, .cm-keyword, .token.keyword, .token.builtin, .token.property {color: var(--code-builtin-color)!important;} /* built-in functions, methods */
+.cm-hmd-codeblock.cm-string, .cm-hmd-codeblock.cm-number, .token.string, .token.number {color: var(--code-string-color)!important;} /* strings and numbers */
+.cm-operator, .token.operator {color: var(--code-operator-color)!important;} /* operators */
+.cm-hmd-codeblock {color: var(--codeblock-color);} /* codeblock */
+.cm-comment, .token.comment {color: var(--code-comment-color)!important;} /* comment */
 
 
 /* ----------- Tags ----------- */
@@ -245,9 +297,9 @@ code[class*="language-"]
 /* ----------- Quotes ----------- */
 
 .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote, .markdown-rendered blockquote {
-    font-style: italic;
+    font-style: var(--quote-style);
     font-size: 0.9em;
-    background-color: var(--dark-purple);
+    background-color: var(--quote-background);
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -255,19 +307,19 @@ code[class*="language-"]
 /* ----------- Underline ----------- */
 
 u {
-    color: var(--white);
-    text-decoration-color: var(--bright-green);
-    text-decoration-thickness: 3px;
+    color: var(--underline-text-color);
+    text-decoration-color: var(--underline-line-color);
+    text-decoration-thickness: var(--underline-line-thickness);
 }
 
-/* ----------- External Links ----------- */
+/* ----------- Links ----------- */
 
 .external-link, .internal-link,
  .cm-s-obsidian span.cm-link:not(.cm-formatting-link) .cm-underline,
 .cm-s-obsidian span.cm-hmd-internal-link .cm-underline {
-  text-shadow: -1px -1px 2px var(--raisin-black), -1px 1px 2px var(--raisin-black),
-    1px -1px 2px var(--raisin-black), 1px 1px 2px var(--raisin-black);
-  color: var(--text-normal);
+  text-shadow: -1px -1px 2px var(--link-text-shadow), -1px 1px 2px var(--link-text-shadow),
+    1px -1px 2px var(--link-text-shadow), 1px 1px 2px var(--link-text-shadow);
+  color: var(--link-text-color);
   background-position: 0 100%;
   background-repeat: repeat-x;
   background-size: 5px 5px;
@@ -276,33 +328,40 @@ u {
 }
 
 .external-link,
-.cm-url,
 .cm-s-obsidian span.cm-link:not(.cm-formatting-link) .cm-underline,
 .cm-s-obsidian span.cm-hmd-external-link .cm-underline
 {
     background-image: linear-gradient(
       to bottom,
-      var(--tropical-indigo) 0%,
-      var(--tropical-indigo) 100%
+      var(--link-ext-color) 0%,
+      var(--link-ext-color) 100%
     );
   }
 
-.internal-link,
-.cm-underline
+.internal-link, .cm-underline
   {
     background-image: linear-gradient(
       to bottom,
-      var(--robin-egg-blue) 0%,
-      var(--robin-egg-blue) 100%
+      var(--link-int-color) 0%,
+      var(--link-int-color) 100%
       );
     text-decoration: none!important;
   }
 
   /* link hover color */
 a:hover,
-.internal-link:hover {
+.internal-link:hover,
+.external-link:hover,
+.cm-underline:hover {
   text-decoration: none !important;
-  color: var(--tropical-indigo);
+  color: var(--link-text-color-hover);
+}
+
+.cm-s-obsidian span.cm-url {
+    color: var(--link-url-text-color)!important;
+    background-image: none!important;
+    background-color: transparent!important;
+    /* text-decoration: double!important; */
 }
 
 /* ----------- File Explorer ----------- */
@@ -317,7 +376,16 @@ a:hover,
 { 
     content: '📁 '; 
     margin-right: 0px !important;
+}
 
+.nav-folder-title-content
+{
+    color: var(--folder-title-color);
+}
+
+.nav-file-title-content
+{
+    color: var(--file-title-color);
 }
 
 .nav-folder-title-content::before {
