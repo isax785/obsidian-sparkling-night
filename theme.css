@@ -103,7 +103,7 @@
     --link-text-color-hover: var(--tropical-indigo);
     --link-ext-color: var(--tropical-indigo);
     --link-int-color: var(--robin-egg-blue);
-    --link-url-text-color: var(--bright-green);
+    --link-url-text-color: var(--tropical-indigo);
 
     /* Explorer */
     --folder-title-color: var(--white);
@@ -192,7 +192,7 @@
     --link-text-color-hover: var(--cornflower-blue);
     --link-ext-color: var(--cornflower-blue);
     --link-int-color: var(--pumpkin);
-    --link-url-text-color: var(--tropical-indigo);
+    --link-url-text-color: var(--pumpkin);
 
     /* Explorer */
     --folder-title-color: var(--rich-black);
@@ -405,7 +405,9 @@ u {
     );
   }
 
-.internal-link, .cm-underline
+.internal-link, 
+/* .cm-s-obsidian span.cm-link:not(.cm-formatting-link) .cm-underline, */
+.cm-s-obsidian span.cm-hmd-internal-link .cm-underline
   {
     background-image: linear-gradient(
       to bottom,
