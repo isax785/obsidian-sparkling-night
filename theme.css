@@ -10,7 +10,7 @@
           | |                               __/ |           __/ |          
           |_|                              |___/           |___/           
           
-          —— Version 1.0.0
+  —— Version 1.0.0
   —— Made by Isax785
   Changelog here: 
 ------------------------------------------------------------------------- */
@@ -25,6 +25,13 @@
   --default-font: Catamaran, Helvetica Neue, Helvetica, Arial, sans-serif;
   --font-editor: Catamaran SSm, Helvetica Neue, Helvetica, Arial, sans-serif;
   --font-monospace: Consolas, Andale Mono, Lucida Console, Source Code Pro, iA Writer Mono S, Jetbrains Mono, Menlo, SFMono-Regular, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Monaco, Courier New, Courier, monospace;
+} */
+
+/* :root {
+  --default-font: Calibri;
+  --h1-font: Times;
+  --font-monospace: Courier;
+  --code-mono-font:  'OperatorMonoSSmLig-Book';;
 } */
 
 :root {
