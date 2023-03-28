@@ -468,6 +468,27 @@ a:hover,
     /* text-decoration: double!important; */
 }
 
+/* ----------- Images ----------- */
+
+img {display:block;
+     margin-left:auto;
+     margin-right:auto;}
+
+.markdown-preview-view img {
+    display: block;
+    margin-top: 20pt;
+    margin-bottom: 20pt;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;  /* experiment with values */
+    transition:transform 0.25s ease;
+  }
+  
+  .markdown-preview-view img:hover {
+      -webkit-transform:scale(1); /* experiment with values */
+      transform:scale(1.4);
+  }
+
 /* ----------- File Explorer ----------- */
 
 .nav-folder-children .nav-file-title-content:first-child::before 
