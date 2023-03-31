@@ -1,10 +1,10 @@
 # Readme
 
-`Sparkling Night` is a dark theme where colors sprinkle in the night. 
+`Sparkling Night` is a dark theme where colors sparkles in the night. 
 
 ![img](img/sparkling_night_dark.png)
 
-Also light version is available, but colors are sparkling a little less 😜
+Also light version is available, but colors are sparkles a little less 😜
 
 ![img](img/sparkling_night_light.png)
 
