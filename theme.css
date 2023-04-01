@@ -16,18 +16,6 @@
 ------------------------------------------------------------------------- */
 
 /* :root {
-  --eworks-font-text: "IBM Plex Sans", Helvetica Neue;
-  --eworks-font-monospace: "Fira Code", "Source Code Pro", Jetbrains Mono;
-  --font-tags: "Architects Daughter";
-  --font-header: var(--font-tags);
-  --font-header-caps-variant: small-caps;
-
-  --default-font: Catamaran, Helvetica Neue, Helvetica, Arial, sans-serif;
-  --font-editor: Catamaran SSm, Helvetica Neue, Helvetica, Arial, sans-serif;
-  --font-monospace: Consolas, Andale Mono, Lucida Console, Source Code Pro, iA Writer Mono S, Jetbrains Mono, Menlo, SFMono-Regular, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Monaco, Courier New, Courier, monospace;
-} */
-
-/* :root {
   --default-font: Calibri;
   --h1-font: Times;
   --font-monospace: Courier;
