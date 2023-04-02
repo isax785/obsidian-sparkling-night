@@ -4,7 +4,7 @@
 
 ![img](img/sparkling_night_dark.png)
 
-Also light version is available, but colors are sparkles a little less 😜
+Also light version is available, but colors sparkle a little less 😜
 
 ![img](img/sparkling_night_light.png)
 
