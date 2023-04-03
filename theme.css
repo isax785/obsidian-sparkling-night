@@ -34,7 +34,7 @@
     --cool-gray: #7C809B;
     --french-gray : #D1D2DC; /*cool gray light*/
     --white-smoke: #F5F5F5;
-    --ylmn-blue: #375BA9; /* #14213d;*/
+    --ylmn-blue: #375BA9; 
     --mint: #13C4A3; 
     --anti-flash-white: #EBEBEB;
     --folly: #FF3366;
@@ -175,7 +175,7 @@
     --codeblock-background: var(--anti-flash-white);
     --codeblock-color: var(--rich-black);
     --inline-code-background: var(--anti-flash-white);
-    --inline-code-color: var(--ylmn-blue);
+    --inline-code-color: var(--tropical-indigo);
     --code-variable-color: var(--rich-black);
     --code-function-color: var(--mint);
     --code-builtin-color: var(--mint);
@@ -209,8 +209,8 @@
     --link-text-color: var(--rich-black);
     --link-text-color-hover: var(--mint);
     --link-ext-color: var(--mint);
-    --link-int-color: var(--folly);
-    --link-url-text-color: var(--folly);
+    --link-int-color: var(--tropical-indigo);
+    --link-url-text-color: var(--tropical-indigo);
 
     /* Explorer */
     --folder-title-color: var(--raisin-black);
