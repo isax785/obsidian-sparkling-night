@@ -8,9 +8,22 @@ Also light version is available, but colors sparkle a little less 😜
 
 ![img](img/sparkling_night_light.png)
 
-[GitHub Link](git@github.com:isax785/obsidian-sparkling-night.git)
+## Sparkling Checkboxes
 
- # Installation
+Sparkling colored checkboxes can be used to apply a distinction to the tasks (e.g. noticing the state of the task as shown below):
+
+![img](img/checkboxes.png)
+
+Syntax:
+
+| Checkbox | Description |
+|---|---|
+|`- [>]` | working progress|
+|`- [-]` | pause/stand-by|
+|`- [/]` | stop |
+|`- [<]` | to be scheduled |
+
+# Installation
 
 To install the theme
 
@@ -21,3 +34,11 @@ To install the theme
 Enjoy!✨
 
 
+# What's New in v1.1.0
+
+- `upgrade` colored checkboxes
+- `fix` inline code text responsive size
+
+---
+
+[GitHub Link](git@github.com:isax785/obsidian-sparkling-night.git)

@@ -376,7 +376,7 @@ code[class*="language-"]
     font-size: 0.9rem!important;
     padding: 3px 4px;
     border-radius: 5px;
-    font-size: 1em!important;
+    font-size: 0.85em!important;
 }
 
 .markdown-rendered code {
