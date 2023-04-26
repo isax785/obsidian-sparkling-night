@@ -50,7 +50,7 @@
 
     /* Text */
     --text-normal: var(--white);
-    --text-accent: var(--atomic-tangerine);
+    --text-accent: var(--bright-green);
     --text-selection: var(--tropical-indigo-light);
     
     --text-header: var(--tropical-indigo);
@@ -130,6 +130,14 @@
 
     /* Progress Bar Loading */
     --progress-bar-color: var(--tropical-indigo);
+
+    /* Highlight */
+    --highlight-background-color: var(--bright-green);
+    --highlight-text-color: var(--dark-purple);
+    --highlight-text-shadow: var(--text-normal);    
+
+    /* Find */
+    --find-flashing: var(--bright-green);
 }
 
 .theme-light {
@@ -220,6 +228,14 @@
 
     /* Progress Bar Loading */
     --progress-bar-color: var(--mint);
+    
+    /* Highlight */
+    --highlight-background-color: var(--mint);
+    --highlight-text-color: var(--white);
+    --highlight-text-shadow: var(--text-normal);
+
+    /* Find */
+    --find-flashing: var(--mint);
 }
 
 /* ----------- Font ----------- */
@@ -430,6 +446,26 @@ u {
     text-decoration-color: var(--underline-line-color);
     text-decoration-thickness: var(--underline-line-thickness);
 }
+
+/* ----------- Highlight ----------- */
+
+.cm-s-obsidian span.cm-formatting-highlight, .cm-s-obsidian span.cm-highlight, .markdown-rendered mark {
+  background-color: var(--highlight-background-color);
+  color: var(--highlight-text-color);
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  border-radius: 0.2rem;
+  /* text-shadow: -1px -1px 1px var(--highlight-text-shadow), -1px 1px 1px var(--highlight-text-shadow), 1px -1px 1px var(--highlight-text-shadow), 1px 1px 1px var(--highlight-text-shadow); */
+}
+
+
+/* ----------- Explorer ----------- */
+
+.is-flashing {
+  background-color: var(--find-flashing);
+  transition: all 0.7s ease-in !important;
+}
+
 
 /* ----------- Links ----------- */
 

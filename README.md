@@ -34,10 +34,19 @@ To install the theme
 Enjoy!✨
 
 
-# What's New in v1.1.0
+# What's New 
+
+Upgrades and fixes of new versions:
+
+## v1.1.0
 
 - `upgrade` colored checkboxes
 - `fix` inline code text responsive size
+
+## v1.2.0
+
+- `upgrade` new color for highlighted text
+- `fix` search result text matchin now highligted
 
 ---
 
