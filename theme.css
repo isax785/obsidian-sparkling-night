@@ -136,7 +136,8 @@
     --highlight-text-color: var(--dark-purple);
     --highlight-text-shadow: var(--text-normal);    
 
-    /* Find */
+    /* Search and Find */
+    --search-result-background: var(--tropical-indigo);
     --find-flashing: var(--bright-green);
 }
 
@@ -235,6 +236,7 @@
     --highlight-text-shadow: var(--text-normal);
 
     /* Find */
+    --search-result-background: var(--french-gray);
     --find-flashing: var(--mint);
 }
 
@@ -456,6 +458,13 @@ u {
   padding-right: 0.3rem;
   border-radius: 0.2rem;
   /* text-shadow: -1px -1px 1px var(--highlight-text-shadow), -1px 1px 1px var(--highlight-text-shadow), 1px -1px 1px var(--highlight-text-shadow), 1px 1px 1px var(--highlight-text-shadow); */
+}
+
+
+/* ----------- Search ----------- */
+
+.search-result-file-matched-text {
+  background-color: var(--search-result-background);
 }
 
 
