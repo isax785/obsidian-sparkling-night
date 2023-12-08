@@ -30,6 +30,7 @@ To install the theme
 Enjoy!✨
 
 
+<<<<<<< HEAD
 # What's New in 
 
 ## v.1.2.0
@@ -38,11 +39,21 @@ Enjoy!✨
 - widened line width
 - `fix` tags internal spacing
 - `fix` H1 header spacing
+=======
+# What's New 
+
+Upgrades and fixes of new versions:
+>>>>>>> 36bb7b9c95cf8e666fbfdf8be6a7eb544f455dc4
 
 ## v1.1.0
 
 - `upgrade` colored checkboxes
 - `fix` inline code text responsive size
+
+## v1.2.0
+
+- `upgrade` new color for highlighted text
+- `fix` search result text matchin now highligted
 
 ---
 
