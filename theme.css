@@ -24,9 +24,11 @@
 
 :root {
     --white: #FCFCFC;
-    --raisin-black: #1B1825;
+    /* --raisin-black: #1b1825; */
+    --raisin-black: #16141f;
     --rich-black: #121019;
     --dark-purple: #242032;
+    --dark-purple-light: #413a58;
     --bright-green: #5AFF15;
     --tropical-indigo: #8B80F9;
     --tropical-indigo-light: #A69EFA; 
@@ -39,9 +41,15 @@
     --anti-flash-white: #EBEBEB;
     --folly: #FF3366;
     --gold: rgb(253, 233, 9);
+    --line-width: 750px;
   }
 
-.theme-dark {
+.theme-dark, .theme-light {
+    --file-line-width: var(--line-width);
+    /* Line color */
+    --tab-divider-color: var(--dark-purple-light);
+    --tab-outline-color: var(--dark-purple-light);
+    --divider-color: var(--dark-purple-light);
     /* Background */
     --background-primary: var(--rich-black);
     --background-secondary: var(--raisin-black);
@@ -77,7 +85,7 @@
     /* bold, Italic, Underline */
 
     --strong: var(--robin-egg-blue);
-    --italic: var(--robin-egg-blue);
+    /* --italic: var(--robin-egg-blue); */
     --underline-text-color: var(--white);
     --underline-line-color: var(--bright-green);
     --underline-line-thickness: 3px;
@@ -132,95 +140,6 @@
     --progress-bar-color: var(--tropical-indigo);
 }
 
-.theme-light {
-    /* Background */
-    --background-primary: var(--white);
-    --background-secondary: var(--white-smoke);
-    --background-secondary-alt: var(--anti-flash-white);
-    --background-code: var(--anti-flash-white);
-
-    /* Text */
-    --text-normal: var(--rich-black);
-    --text-accent: var(--folly);
-    --text-selection: var(--french-gray);
-    
-    --text-header: var(--ylmn-blu);
-    
-    --h1-color: var(--ylmn-blue);
-    --h1-gradient-start: transparent;
-    --h1-gradient-mid: var(--ylmn-blue);
-    --h1-gradient-end: transparent;
-    
-    --h2-color: var(--ylmn-blue);
-    --h2-gradient-start: var(--ylmn-blue);
-    --h2-gradient-end: transparent;
-
-    --h3-color: var(--ylmn-blue);
-    --h4-color: var(--ylmn-blue);
-    --h5-color: var(--ylmn-blue);
-    --h6-color: var(--ylmn-blue);
-
-    /* bar */
-    --bar-gradient-start: transparent;
-    --bar-gradient-mid: var(--mint);
-    --bar-gradient-end: transparent;
-
-    /* bold, Italic, Underline */
-    --strong: var(--folly);
-    --italic: var(--folly);
-    --underline-text-color: var(--rich-black);
-    --underline-line-color: var(--mint);
-    --underline-line-thickness: 3px;
-
-    /* Code */
-    --codeblock-background: var(--anti-flash-white);
-    --codeblock-color: var(--rich-black);
-    --inline-code-background: var(--anti-flash-white);
-    --inline-code-color: var(--tropical-indigo);
-    --code-variable-color: var(--rich-black);
-    --code-function-color: var(--mint);
-    --code-builtin-color: var(--mint);
-    --code-string-color: var(--folly);
-    --code-operator-color: var(--mint);
-    --code-comment-color: var(--cool-gray);
-
-    /* Tags */
-    --tags-background: var(--anti-flash-white);
-    --tags-color: var(--folly);
-
-    /* List Markers  */
-    --list-marker-color: var(--rich-black);
-    --list-marker-color-hover: var(--mint);
-
-    /* Checkboxes */
-    --checkbox-marker-color: var(--white);
-    --radius-s: 2px;
-    --interactive-accent: var(--ylmn-blue); /*marked color*/
-    --checklist-done-color: var(--cool-gray);
-    --checkbox-border-color: var(--rich-black);
-    --checkbox-border-color-hover: var(--mint);
-    --checkbox-color-hover: var(--mint);
-
-    /* Quotes */
-    --quote-background: var(--anti-flash-white);
-    --quote-style: italic;
-
-    /* Links */
-    --link-text-shadow: var(--white);
-    --link-text-color: var(--rich-black);
-    --link-text-color-hover: var(--mint);
-    --link-ext-color: var(--mint);
-    --link-int-color: var(--tropical-indigo);
-    --link-url-text-color: var(--tropical-indigo);
-
-    /* Explorer */
-    --folder-title-color: var(--raisin-black);
-    --file-title-color: var(--rich-black);
-    --folder-filter: invert(55%) sepia(90%) saturate(407%) hue-rotate(119deg) brightness(94%) contrast(91%);
-
-    /* Progress Bar Loading */
-    --progress-bar-color: var(--mint);
-}
 
 /* ----------- Font ----------- */
 
@@ -240,12 +159,16 @@
     width: 100%;
     border-bottom: 0.1em solid transparent;
     border-image: linear-gradient(0.25turn, 
-                                  var(--h1-gradient-start) 5%, 
-                                  var(--h1-gradient-mid) 50%,
-                                  var(--h1-gradient-end) 96%);
+                  var(--h1-gradient-start) 5%, 
+                  var(--h1-gradient-mid) 50%,
+                  var(--h1-gradient-end) 96%);
     border-radius: 3px;
     border-image-slice: 1;
-    padding: 3px;
+    padding-top: 20px!important;
+    padding-bottom: 8px!important;
+    margin-top: 5px!important;
+    margin-bottom: 5px!important;
+
 }
 
 .HyperMD-header-2, h2 {
@@ -253,8 +176,8 @@
     width: 100%;
     border-bottom: 0.05em solid transparent;
     border-image: linear-gradient(0.25turn, 
-                                  var(--h2-gradient-start) 0%,
-                                  var(--h2-gradient-end) 60%);
+                  var(--h2-gradient-start) 0%,
+                  var(--h2-gradient-end) 60%);
     border-radius: 3px;
     border-image-slice: 1;
 }
@@ -409,8 +332,7 @@ code[class*="language-"]
     background-color: var(--tags-background)!important;
     color: var(--tags-color)!important;
     font-weight: bold;
-    padding: 5px 5px;
-    border-radius: 6px;
+    padding-bottom: 5px;
 }
 
 /* ----------- Quotes ----------- */
@@ -436,12 +358,14 @@ u {
 .external-link, .internal-link,
  .cm-s-obsidian span.cm-link:not(.cm-formatting-link) .cm-underline,
 .cm-s-obsidian span.cm-hmd-internal-link .cm-underline {
-  text-shadow: -1px -1px 2px var(--link-text-shadow), -1px 1px 2px var(--link-text-shadow),
-    1px -1px 2px var(--link-text-shadow), 1px 1px 2px var(--link-text-shadow);
+  text-shadow: -1px -1px 2px var(--link-text-shadow), 
+               -1px 1px 2px var(--link-text-shadow),
+                1px -1px 2px var(--link-text-shadow), 
+                1px 1px 2px var(--link-text-shadow);
   color: var(--link-text-color);
   background-position: 0 100%;
   background-repeat: repeat-x;
-  background-size: 5px 5px;
+  background-size: 3px 3px;
   text-decoration: none;
   padding-right: 0;
 }

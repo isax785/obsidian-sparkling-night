@@ -2,11 +2,7 @@
 
 `Sparkling Night` is a dark theme where colors sparkles in the night. 
 
-![img](img/sparkling_night_dark.png)
-
-Also light version is available, but colors sparkle a little less 😜
-
-![img](img/sparkling_night_light.png)
+![img](img/sparkling_night.png)
 
 ## Sparkling Checkboxes
 
@@ -34,7 +30,16 @@ To install the theme
 Enjoy!✨
 
 
-# What's New in v1.1.0
+# What's New in 
+
+## v.1.2.0
+
+- removed light theme (it didn't make sense at all)
+- widened line width
+- `fix` tags internal spacing
+- `fix` H1 header spacing
+
+## v1.1.0
 
 - `upgrade` colored checkboxes
 - `fix` inline code text responsive size
