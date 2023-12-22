@@ -1,6 +1,6 @@
 # Readme
 
-`Sparkling Night` is a dark theme where colors sparkles in the night. 
+`Sparkling Night` is a dark theme with colors sparkling in the night. 
 
 ![img](img/sparkling_night.png)
 
@@ -38,16 +38,13 @@ Enjoy!✨
 - widened line width
 - `fix` tags internal spacing
 - `fix` H1 header spacing
+- `upgrade` new color for highlighted text
+- `fix` search result text matchin now highligted
 
 ## v1.1.0
 
 - `upgrade` colored checkboxes
 - `fix` inline code text responsive size
-
-## v1.2.0
-
-- `upgrade` new color for highlighted text
-- `fix` search result text matchin now highligted
 
 ---
 
