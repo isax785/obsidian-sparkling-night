@@ -88,7 +88,7 @@
     /* --italic: var(--robin-egg-blue); */
     --underline-text-color: var(--white);
     --underline-line-color: var(--bright-green);
-    --underline-line-thickness: 3px;
+    --underline-line-thickness: 0.15em;
 
     /* Code */
     --codeblock-background: var(--dark-purple);
@@ -112,12 +112,13 @@
 
     /* Checkboxes */
     --checkbox-marker-color: var(--white);
-    --radius-s: 2px;
+    --radius-s: 3px;
     --interactive-accent: var(--tropical-indigo); /*marked color*/
     --checklist-done-color: var(--cool-gray);
     --checkbox-border-color: var(--cool-gray);
     --checkbox-border-color-hover: var(--bright-green);
     --checkbox-color-hover: var(--bright-green);
+    --checklist-done-decoration: none;
 
     /* Quotes */
     --quote-background: var(--dark-purple);
@@ -163,7 +164,7 @@
 
 /* ----------- Titles ----------- */
 
-.HyperMD-header-1, h1 {
+.HyperMD-header-1, .HyperMD-header.HyperMD-header-1.cm-line, h1 {
     text-align: center;
     width: 100%;
     border-bottom: 0.1em solid transparent;
@@ -173,22 +174,25 @@
                   var(--h1-gradient-end) 96%);
     border-radius: 3px;
     border-image-slice: 1;
-    padding-top: 20px!important;
-    padding-bottom: 8px!important;
-    margin-top: 5px!important;
-    margin-bottom: 5px!important;
-
-}
-
-.HyperMD-header-2, h2 {
+    padding-top: 0.3em!important;
+    padding-bottom: 0.2em!important;
+    margin-top: 0.3em!important;
+    margin-bottom: 0.5em!important;
+  }
+  
+  .HyperMD-header-2, .HyperMD-header.HyperMD-header-2.cm-line, h2 {
     text-align: left;
     width: 100%;
     border-bottom: 0.05em solid transparent;
     border-image: linear-gradient(0.25turn, 
-                  var(--h2-gradient-start) 0%,
-                  var(--h2-gradient-end) 60%);
+    var(--h2-gradient-start) 0%,
+    var(--h2-gradient-end) 60%);
     border-radius: 3px;
     border-image-slice: 1;
+    padding-top: 0.3em!important;
+    padding-bottom: 0.2em!important;
+    margin-top: 0.3em!important;
+    margin-bottom: 0.5em!important;
 }
 
 /* ----------- Bar ----------- */
@@ -246,6 +250,7 @@ ul ul ul {
 .HyperMD-task-line[data-task="/"] .task-list-item-checkbox:hover {
   background-color: var(--folly);
   border-color: var(--checkbox-border-color);
+  text-decoration: none;
 }
 
 .HyperMD-task-line[data-task=">"] .task-list-item-checkbox,
@@ -315,7 +320,7 @@ code[class*="language-"]
     background-color: var(--codeblock-background)!important;
     /* color: var(--white); */
     color: var(--inline-code-color);
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     padding: 3px 4px;
     border-radius: 5px;
 }
@@ -401,7 +406,7 @@ u {
   color: var(--link-text-color);
   background-position: 0 100%;
   background-repeat: repeat-x;
-  background-size: 3px 3px;
+  background-size: 1px 2px;
   text-decoration: none;
   padding-right: 0;
 }
@@ -442,6 +447,10 @@ a:hover,
     background-image: none!important;
     background-color: transparent!important;
     /* text-decoration: double!important; */
+}
+
+.markdown-rendered .internal-link{
+  color: var(--text-normal) !important;
 }
 
 /* ----------- Images ----------- */

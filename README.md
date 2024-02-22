@@ -30,15 +30,25 @@ To install the theme
 Enjoy!✨
 
 
-# What's New in 
+# What's New 
+
+## v.1.2.1
+
+- `upgrade` removed strikethrough when flagging a checkbox
+- `upgrade` title top and bottom padding
+- `upgrade` reduced underline thickness
+- `fix` internal/external links improved readability by reducing the underline size  
+- `fix` rendered link text color
+- `fix` headings 1 and 2 increased bottom margin
+- `fix` rendered code size
 
 ## v.1.2.0
 
-- removed light theme (it didn't make sense at all)
-- widened line width
+- `upgrade` removed light theme (it didn't make sense at all)
+- `upgrade` widened line width
+- `upgrade` new color for highlighted text
 - `fix` tags internal spacing
 - `fix` H1 header spacing
-- `upgrade` new color for highlighted text
 - `fix` search result text matchin now highligted
 
 ## v1.1.0
