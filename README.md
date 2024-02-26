@@ -41,6 +41,7 @@ Enjoy!✨
 - `fix` rendered link text color
 - `fix` headings 1 and 2 increased bottom margin
 - `fix` rendered code size
+- `fix` codeblocks text color (reading mode) and size
 
 ## v.1.2.0
 

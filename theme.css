@@ -101,6 +101,7 @@
     --code-string-color: var(--robin-egg-blue);
     --code-operator-color: var(--bright-green);
     --code-comment-color: var(--cool-gray);
+    --code-text-size: 0.85rem;
 
     /* Tags */
     --tags-background: var(--dark-purple);
@@ -287,12 +288,18 @@ ul ul ul {
 pre code { 
     background-color: var(--codeblock-background) !important;
     border: var(--codeblock-background) !important;
+    color: var(--codeblock-color)!important;
+}
+
+.markdown-rendered pre {
+  background-color: var(--codeblock-background);
 }
 
 pre[class*="language-"], 
 code[class*="language-"]
 {
-    background: var(--codeblock-background);
+    font-size: var(--code-text-size)!important;
+    background: var(--codeblock-background)!important;
     color: var(--codeblock-color)!important;
 }
 
@@ -310,17 +317,16 @@ code[class*="language-"]
 .cm-inline-code{
     background-color: var(--inline-code-background)!important;
     color: var(--inline-code-color)!important;
-    font-size: 0.9rem!important;
+    font-size: var(--code-text-size)important;
     padding: 3px 4px;
     border-radius: 5px;
-    font-size: 0.85em!important;
 }
 
 .markdown-rendered code {
     background-color: var(--codeblock-background)!important;
     /* color: var(--white); */
     color: var(--inline-code-color);
-    font-size: 0.85rem;
+    font-size: var(--code-text-size)important;
     padding: 3px 4px;
     border-radius: 5px;
 }
