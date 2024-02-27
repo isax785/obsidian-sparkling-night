@@ -480,6 +480,19 @@ img {display:block;
       transform:scale(1.4);
   }
 
+  /* ----------- Tables ----------- */
+  
+  /* preview */
+  .markdown-preview-view table {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .markdown-source-view.mod-cm6 .cm-table-widget {
+    margin-left: auto!important;
+    margin-right: auto!important;
+  }
+
 /* ----------- File Explorer ----------- */
 
 .nav-folder-children .nav-file-title-content:first-child::before 
