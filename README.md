@@ -37,6 +37,7 @@ Enjoy!✨
 - `upgrade` removed strikethrough when flagging a checkbox
 - `upgrade` title top and bottom padding
 - `upgrade` reduced underline thickness
+- `upgrade` tables are now centered in read mode
 - `fix` internal/external links improved readability by reducing the underline size  
 - `fix` rendered link text color
 - `fix` headings 1 and 2 increased bottom margin

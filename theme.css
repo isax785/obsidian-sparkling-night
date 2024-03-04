@@ -317,7 +317,7 @@ code[class*="language-"]
 .cm-inline-code{
     background-color: var(--inline-code-background)!important;
     color: var(--inline-code-color)!important;
-    font-size: var(--code-text-size)important;
+    font-size: var(--code-text-size)!important;
     padding: 3px 4px;
     border-radius: 5px;
 }
@@ -326,7 +326,7 @@ code[class*="language-"]
     background-color: var(--codeblock-background)!important;
     /* color: var(--white); */
     color: var(--inline-code-color);
-    font-size: var(--code-text-size)important;
+    font-size: var(--code-text-size)!important;
     padding: 3px 4px;
     border-radius: 5px;
 }
