@@ -101,7 +101,8 @@
     --code-string-color: var(--robin-egg-blue);
     --code-operator-color: var(--bright-green);
     --code-comment-color: var(--cool-gray);
-    --code-text-size: 0.85rem;
+    --code-text-size: 0.9rem;
+    --code-size: 0.9rem;
 
     /* Tags */
     --tags-background: var(--dark-purple);
@@ -334,7 +335,7 @@ code[class*="language-"]
 /* code styling */
 
 .cm-link, .cm-variable, .cm-variable-2, .cm-variable-3 {color: var(--code-variable-color)!important;} /* variable */
-.cm-def.cm-hmd-codeblock, .token.function{
+.cm-def.cm-hmd-codeblock, .token.function, .token.class-name {
     color: var(--code-function-color)!important;
     text-emphasis: italic;
 } /* function name in declaration */
