@@ -101,8 +101,7 @@
     --code-string-color: var(--robin-egg-blue);
     --code-operator-color: var(--bright-green);
     --code-comment-color: var(--cool-gray);
-    --code-text-size: 0.9rem;
-    --code-size: 0.9rem;
+    --code-text-size: 0.9em;
 
     /* Tags */
     --tags-background: var(--dark-purple);
@@ -203,11 +202,16 @@
   margin-bottom: 0.3em!important;
 }
 
+.cm-header.cm-header-1.cm-inline-code,
+.cm-header.cm-header-2.cm-inline-code{
+  font-size: var(--code-text-size)!important;
+}
+
 .cm-header.cm-header-3.cm-inline-code,
 .cm-header.cm-header-4.cm-inline-code,
 .cm-header.cm-header-5.cm-inline-code,
 .cm-header.cm-header-6.cm-inline-code{
-  font-size: 0.95rem!important;
+  font-size: var(--code-text-size)!important;
 }
 /* ----------- Bar ----------- */
 
