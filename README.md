@@ -4,6 +4,11 @@
 
 ![img](img/sparkling_night.png)
 
+<p align="center">💜Your support will spread full gratitude💜</p>
+<p align="center">
+    <a href="https://www.buymeacoffee.com/isax785" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+</p>
+
 ## Sparkling Checkboxes
 
 Sparkling colored checkboxes can be used to apply a distinction to the tasks (e.g. noticing the state of the task as shown below):
@@ -29,6 +34,7 @@ To install the theme
 
 Enjoy!✨
 
+---
 
 # What's New 
 
