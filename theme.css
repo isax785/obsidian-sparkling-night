@@ -175,12 +175,26 @@
                   var(--h1-gradient-end) 96%);
     border-radius: 3px;
     border-image-slice: 1;
+  }
+
+  /* Editor lines: padding-only spacing. CodeMirror 6 does not account for
+     vertical margins on .cm-line elements when mapping mouse coordinates
+     to text positions, so margins here made clicks land on the wrong line. */
+  .HyperMD-header-1, .HyperMD-header.HyperMD-header-1.cm-line {
+    padding-top: 0.6em!important;
+    padding-bottom: 0.2em!important;
+    margin-top: 0!important;
+    margin-bottom: 0!important;
+  }
+
+  /* Reading view: original spacing (margins are safe outside the editor) */
+  .markdown-rendered h1 {
     padding-top: 0.3em!important;
     padding-bottom: 0.2em!important;
     margin-top: 0.3em!important;
     margin-bottom: 0.5em!important;
   }
-  
+
   .HyperMD-header-2, .HyperMD-header.HyperMD-header-2.cm-line, h2 {
     text-align: left;
     width: 100%;
@@ -190,13 +204,30 @@
     var(--h2-gradient-end) 60%);
     border-radius: 3px;
     border-image-slice: 1;
+}
+
+.HyperMD-header-2, .HyperMD-header.HyperMD-header-2.cm-line {
+    padding-top: 0.6em!important;
+    padding-bottom: 0.2em!important;
+    margin-top: 0!important;
+    margin-bottom: 0!important;
+}
+
+.markdown-rendered h2 {
     padding-top: 0.3em!important;
     padding-bottom: 0.2em!important;
     margin-top: 0.3em!important;
     margin-bottom: 0.5em!important;
 }
 
-.HyperMD-header-3, .HyperMD-header.HyperMD-header-3.cm-line, h3 {
+.HyperMD-header-3, .HyperMD-header.HyperMD-header-3.cm-line {
+  padding-top: 0.6em!important;
+  padding-bottom: 0.3em!important;
+  margin-top: 0!important;
+  margin-bottom: 0!important;
+}
+
+.markdown-rendered h3 {
   padding-top: 0.3em!important;
   margin-top: 0.3em!important;
   margin-bottom: 0.3em!important;
@@ -217,17 +248,30 @@
 
 .cm-line hr,
 .markdown-preview-view hr {
-  margin-block-start: 1em;
-  margin-block-end: 1.2em;
   border: none;
   height: 0;
   border-bottom: 1px solid;
   border-image-slice: 1;
   border-width: 0.1em;
-  border-image-source: linear-gradient(0.25turn, 
-                                       var(--bar-gradient-start) 2%, 
+  border-image-source: linear-gradient(0.25turn,
+                                       var(--bar-gradient-start) 2%,
                                        var(--bar-gradient-mid) 50%,
                                        var(--bar-gradient-end) 98%);
+}
+
+/* Reading view keeps the original spacing via margins */
+.markdown-preview-view hr {
+  margin-block-start: 1em;
+  margin-block-end: 1.2em;
+}
+
+/* Editor: margins on an <hr> inside a .cm-line escape the line box and
+   break CodeMirror's click mapping the same way heading margins did —
+   the space above the rule is padding instead, contained in the line. */
+.cm-line hr {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-block-start: 1em;
 }
 
 /* ----------- Lists ----------- */
