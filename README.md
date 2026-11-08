@@ -1,8 +1,7 @@
-# Readme
+![img](img/sparkling_night.png)
 
 `Sparkling Night` is a dark theme with colors sparkling in the night. 
 
-![img](img/sparkling_night.png)
 
 <p align="center">💜Your support will spread full gratitude💜</p>
 <p align="center">
