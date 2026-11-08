@@ -1,3 +1,5 @@
+# Sparkling Night
+
 ![img](img/sparkling_night.png)
 
 `Sparkling Night` is a dark theme with colors sparkling in the night. 
