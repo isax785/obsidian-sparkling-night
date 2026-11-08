@@ -85,7 +85,7 @@
     /* bold, Italic, Underline */
 
     --strong: var(--robin-egg-blue);
-    /* --italic: var(--robin-egg-blue); */
+    --italic: var(--robin-egg-blue);
     --underline-text-color: var(--white);
     --underline-line-color: var(--bright-green);
     --underline-line-thickness: 0.15em;
@@ -259,8 +259,6 @@ ul ul ul {
 .HyperMD-task-line[data-task=">"],
 .HyperMD-task-line[data-task="-"],
 .HyperMD-task-line[data-task="<"]) .task-list-item-checkbox::after {
-  -webkit-mask-image: none;
-  mask-image: none;
   background-color: transparent;
 }
 
@@ -294,8 +292,8 @@ ul ul ul {
     color: var(--strong) !important;
 }
 
-.cm-em, em,
-.cm-em cm-quote cm-quote-1
+.cm-em, em
+.cm-em, cm-quote cm-quote-1
  {
     color: var(--italic);
 }
